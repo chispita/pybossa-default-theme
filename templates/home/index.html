@@ -87,8 +87,26 @@
           </li>
           {% endfor %}
         </ul>
-      </section>
       {% endif %}
+
+      {% if top_teams %}
+        <h2><i class="icon-group"></i>{{ _('Most Active Teams') }}</h2>
+        <ul class="users">
+            {% for team in top_teams %}
+          <li>
+             <a href="{{url_for('team.public_profile', name=team.name)}}" class="thumbnail" rel='popover' title="<strong>{{team['name']}}</strong>" data-content="
+                    <strong>{{ _('Joined') }}</strong> {{team['created'][0:10]}}
+                    <br/>
+                    <strong>{{_('Submitted Tasks')}}:</strong> {{ team.score }}
+                    " rel="popover" data-original-title="<strong>{{team.description}}</strong>">
+            <img src="{{ 'default' | gravatar(size=90)}}">
+           </a>
+           <span class="label label-success">{{team.score}}</span> <small>{{_('Tasks')}}</small>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+     {% endif %}
 <script>
 $("a[rel=popover]").popover({
         html: true,
