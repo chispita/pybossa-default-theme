@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set active_page = "team" %}
+{% import "team/_helpers.html" as helper %}
+{% import "privacy/locked.html" as privacy %}
+
+{% block content %}
+<div class="row">
+    <div class="span12">
+        <section id="team-data">
+            <h1><strong>{{ team['name'] }}</strong></h1>
+            {{ helper.render_team_profile(team, True)}}
+        </section>
+    </div>
+</div>
+{% endblock %}
