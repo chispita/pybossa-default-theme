@@ -1,9 +1,3 @@
 [submodule "static/js/pybossa"]
 	path = static/js/pybossa
 	url = https://github.com/chispita/pybossa.js
-[submodule "static/js/pybossa.js"]
-	path = static/js/pybossa.js
-	url = https://github.com/chispita/pybossa.js
-[submodule "static/js/pybossa1"]
-	path = static/js/pybossa1
-	url = https://github.com/chispita/pybossa.js
