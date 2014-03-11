@@ -12,3 +12,16 @@ crowd-source human problem-solving skills!
 
 PyBossa powers [PyBossa.Socientize](http://pybossa.socientize.eu/) 
 
+## Copyright / License
+
+Copyright 2014 SF Isle of Man Limited. 
+
+Source Code License: The GNU Affero General Public License, either version 3 of the License
+or (at your option) any later version. (see COPYING file)
+
+The GNU Affero General Public License is a free, copyleft license for
+software and other kinds of works, specifically designed to ensure
+cooperation with the community in the case of network server software.
+
+Documentation and media is under a Creative Commons Attribution License version
+3.
